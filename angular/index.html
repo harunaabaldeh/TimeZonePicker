@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+
+<head>
+  <meta charset="utf-8">
+  <title>Timezone App</title>
+  <script src="https://code.angularjs.org/1.7.9/angular.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+  <script src="./angular.js"></script>
+</head>
+
+<body>
+  <div ng-app="myApp" ng-controller="myController">
+    <h2>Choose Timezone:</h2>
+    <select ng-model="selectedTimezone" ng-options="timezone as timezone.name for timezone in timezones"></select>
+    <button ng-click="saveDateTime()">Save Datetime</button>
+</div>
+</body>
+
+</html>
